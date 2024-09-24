@@ -79,7 +79,6 @@ Antes de comenzar, asegúrate de tener instalado en tu PC:
 1. **Clonar el Repositorio:**
    Abre tu terminal o símbolo del sistema y ejecuta:
    ```bash
-<!--
 # Clonar el repositorio
 git clone https://github.com/brayanvilla555/appAsistencia.git
 
@@ -93,4 +92,4 @@ Update-Package -Reinstall
 # Asegúrate de que la cadena de conexión esté correctamente configurada en appsettings.json
 # Ejecutar migraciones
 Update-Database
--->
+
