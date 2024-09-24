@@ -1,0 +1,33 @@
+﻿@model ICollection<proyectoAsistencia.Models.Asistencia>
+@{
+    ViewData["Title"] = "Listado de mis asistencias";
+}
+
+<h2 class="mt-5 h2 text-secondary">@ViewData["Title"]</h2>
+
+<table class="table table-hover table-bordered mt-4">
+    <thead>
+        <tr class="bg-success text-white bg-gradient">
+            <th class="text-center">
+                Nombre del evento
+            </th>
+            <th class="text-center">
+                Fecha de asistencia 
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Evento.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaHoraRegistro)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

@@ -1,0 +1,57 @@
+﻿@model proyectoAsistencia.ViewModel.LoginViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row h-50 justify-content-center mt-5">
+    <div class="card col-md-10 col-sm-12 text-center text-white" style="background-image: url('https://scontent.fcja2-1.fna.fbcdn.net/v/t39.30808-6/418321515_841569621105762_5597408396783320006_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=1_PJR2dtr5cQ7kNvgGwBsxB&_nc_ht=scontent.fcja2-1.fna&_nc_gid=AqsHxPYiir7mBjhmlg8gtSB&oh=00_AYDscgJPlNcecTSS6KdOXl8FCmksJKckSRKnuhbV04a5cg&oe=66F6B7DC'); background-size: cover; background-position: center center; height: 200px; border: none;">
+        <div class="card-body">
+        </div>
+    </div>
+</div>
+
+<div class="d-flex col-12 justify-content-center align-items-center mt-3">
+    <div class="row bg-light shadow rounded overflow-hidden">
+        <div class="col-md-6  d-none d-md-block">
+            <img src="https://images.freeimages.com/clg/istock/previews/8010/80105769-user-login-or-access-authentication-icon.jpg"
+                 alt="Imagen de Login"
+                 class="img-fluid h-100"
+                 style="object-fit: cover;">
+        </div>
+        <div class="col-md-6 col-sm-12 p-5" style="background-color: #007bff;">
+            <h3 class="mb-4 text-center text-white">Iniciar Sesión</h3>
+            <form asp-controller="Login" asp-action="Login" method="POST">
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label text-white"></label>
+                    <input asp-for="Email" class="form-control" placeholder="Ingrese su correo" required aria-label="Correo electrónico">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label text-white"></label>
+                    <input asp-for="Password" class="form-control" placeholder="Ingrese su contraseña" type="password" required aria-label="Contraseña">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="mb-3 text-white">
+                    <label class="form-label">Seleccionar Rol</label>
+                    <div class="form-check">
+                        <input asp-for="Role" class="form-check-input" type="radio" value="Administrador" required aria-label="Rol Administrador">
+                        <label class="form-check-label">Administrador</label>
+                    </div>
+                    <div class="form-check">
+                        <input asp-for="Role" class="form-check-input" type="radio" value="Estudiante" required aria-label="Rol Estudiante">
+                        <label class="form-check-label">Estudiante</label>
+                    </div>
+                    <div class="form-check">
+                        <input asp-for="Role" class="form-check-input" type="radio" value="Docente" required aria-label="Rol Docente">
+                        <label class="form-check-label">Docente</label>
+                    </div>
+                    <span asp-validation-for="Role" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-light w-100">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<partial name="_ValidationScriptsPartial" />

@@ -1,0 +1,109 @@
+﻿@using proyectoAsistencia.Utils
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common
+@model IPagedList<proyectoAsistencia.Models.Estudiante>
+
+@{
+    ViewData["Title"] = "Listado de estudiantes";
+    var buscarTexto = ViewData["ValorCadenaBusqueda"]?.ToString();
+}
+
+<h3 class="mt-5 h2 text-secondary">Listado de estudiantes</h3>
+<div class="d-flex justify-content-between mb-3">
+
+    <div class="col-md-4 col-sm-12 text-start">
+        <form asp-action="ImportarExcel" method="post" enctype="multipart/form-data">
+            <input type="file" class="d-none" name="archivoExcel" id="archivoExcel">
+            <label class="btn btn-primary" for="archivoExcel">
+                <i class="fas fa-file-export"></i>
+            </label>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-upload"></i></button>
+            <a asp-action="Create" class="btn btn-success"><i class="fas fa-user-plus"></i> Nuevo estudiante</a>
+        </form>
+    </div>
+
+    <div class="col-md-7 col-sm-12">
+        <form asp-controller="Estudiante" asp-action="Index">
+            <div class="input-group">
+                <input type="text"
+                       name="cadenaBusqueda"
+                       value="@buscarTexto"
+                       class="form-control w-25"
+                       placeholder="Ej:2022011539" pattern="\d+"
+                       oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+
+                <select name="buscarCiclo" class="form-control w-25" asp-items="@Html.GetEnumSelectList<Ciclo>()">
+                    <option value="">Selecciona un Ciclo</option>
+                    @if (ViewData["BuscarCiclo"] != null)
+                    {
+                        <option selected="selected" value="@ViewData["BuscarCiclo"]">@ViewData["BuscarCiclo"]</option>
+                    }
+                </select>
+                <button class="btn btn-outline-info" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-outline-warning" asp-action="LimpiarBusqueda" type="submit">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<table class="table table-hover table-bordered mt-4">
+    <thead>
+        <tr class="bg-success text-white bg-gradient">
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FirstOrDefault().CodigoEstudiante)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Nombre)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Apellido)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Telefono)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Email)
+            </th>
+            <th class="text-center">Operaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoEstudiante)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td class="text-center">
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm"><i class="fas fa-user-edit"></i></a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"><i class="fas fa-user-times"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+            new PagedListRenderOptions
+        {
+            LiElementClasses = new[] { "page-item" },
+            PageClasses = new[] { "page-link" }
+        })

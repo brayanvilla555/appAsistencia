@@ -1,0 +1,97 @@
+﻿@using proyectoAsistencia.Utils
+@model proyectoAsistencia.ViewModel.CreateEventoViewModel
+
+@{
+    ViewData["Title"] = "Editar evento";
+}
+
+<div class="card mt-5">
+    <div class="card-header bg-gradient bg-success">
+        <h3 class="text-secondary text-white text-center">@ViewData["Title"]</h3>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <form asp-controller="Evento" asp-action="Edit" method="post">
+                    <input asp-for="Evento.Id" type="hidden"></input>
+
+                    <div class="col-md-12 d-md-flex d-sm-block justify-content-between">
+                        <div class="col-md-3 col-sm-12 me-2">
+                            <label class="control-label">Ponentes</label>
+                            <div class="card px-2 mb-2">
+                                @if (Model.Ponentes != null)
+                                {
+                                    foreach (var ponente in Model.Ponentes)
+                                    {
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox"
+                                                       class="form-check-input"
+                                                       name="SelectedPonentesIds" value="@ponente.Id"
+                                                @(Model.SelectedPonentesIds.Contains(ponente.Id) ? "checked" : "") />
+                                                @ponente.Nombre @ponente.Apellido
+                                            </label>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-12">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="row mb-4">
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <label asp-for="Evento.Nombre" class="control-label"></label>
+                                    <input asp-for="Evento.Nombre" class="form-control" />
+                                    <span asp-validation-for="Evento.Nombre" class="text-danger"></span>
+                                </div>
+                                <div class="form-group  col-md-6 col-sm-12">
+                                    <label asp-for="Evento.FechaHoraInicio" class="control-label"></label>
+                                    <input asp-for="Evento.FechaHoraInicio"  class="form-control" />
+                                    <span asp-validation-for="Evento.FechaHoraInicio" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <label asp-for="Evento.FechaHoraFin" class="control-label"></label>
+                                    <input asp-for="Evento.FechaHoraFin" class="form-control" />
+                                    <span asp-validation-for="Evento.FechaHoraFin" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <label asp-for="Evento.Estado" class="control-label"></label>
+                                    <select asp-for="Evento.Estado" asp-items="@Html.GetEnumSelectList<Estado>()" class="form-control"></select>
+                                    <span asp-validation-for="Evento.Estado" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Evento.Descripcion" class="control-label"></label>
+                                <textarea asp-for="Evento.Descripcion" class="form-control"></textarea>
+                                <span asp-validation-for="Evento.Descripcion" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="form-group col-md-12 col-sm-12">
+                                    <label asp-for="Evento.Ubicacion" class="control-label"></label>
+                                    <input asp-for="Evento.Ubicacion" class="form-control" />
+                                    <span asp-validation-for="Evento.Ubicacion" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3 text-end">
+                                <div class="d-flex justify-content-end">
+                                    <div class="form-group text-end">
+                                        <a asp-action="Index" class="btn btn-info text-white"><i class="fas fa-arrow-alt-circle-left"></i>&nbsp;Regresar</a>
+                                        <button type="submit" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i>&nbsp;Guardar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

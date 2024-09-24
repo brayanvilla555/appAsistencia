@@ -1,0 +1,49 @@
+﻿@model proyectoAsistencia.Models.Asistencia
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Asistencia</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="EstudianteId" class="control-label"></label>
+                <select asp-for="EstudianteId" class="form-control" asp-items="ViewBag.EstudianteId"></select>
+                <span asp-validation-for="EstudianteId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventoId" class="control-label"></label>
+                <select asp-for="EventoId" class="form-control" asp-items="ViewBag.EventoId"></select>
+                <span asp-validation-for="EventoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdministradorId" class="control-label"></label>
+                <select asp-for="AdministradorId" class="form-control" asp-items="ViewBag.AdministradorId"></select>
+                <span asp-validation-for="AdministradorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaHoraRegistro" class="control-label"></label>
+                <input asp-for="FechaHoraRegistro" class="form-control" />
+                <span asp-validation-for="FechaHoraRegistro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

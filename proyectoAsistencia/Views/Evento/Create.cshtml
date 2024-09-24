@@ -1,0 +1,145 @@
+﻿@using proyectoAsistencia.Utils
+
+@model proyectoAsistencia.Models.Evento
+
+@{
+    ViewData["Title"] = "Agregar nuevo evento";
+}
+
+<div class="card mt-5">
+    <div class="card-header bg-gradient bg-success">
+        <h3 class="text-secondary text-white text-center">@ViewData["Title"]</h3>
+    </div>
+
+    <div class="card-body">
+        <div class="row">
+            <div class="row">
+                <form asp-action="Create">
+                    <div class="col-md-12 d-md-flex d-sm-block justify-content-between">
+                        <div class="col-md-12 col-sm-12">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="row mb-4">
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <label asp-for="Nombre" class="control-label"></label>
+                                    <input asp-for="Nombre" class="form-control" />
+                                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <label asp-for="FechaHoraInicio" class="control-label"></label>
+                                    <input asp-for="FechaHoraInicio" class="form-control" />
+                                    <span asp-validation-for="FechaHoraInicio" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <label asp-for="FechaHoraFin" class="control-label"></label>
+                                    <input asp-for="FechaHoraFin" class="form-control" />
+                                    <span asp-validation-for="FechaHoraFin" class="text-danger"></span>
+                                </div>
+                                <div class="form-group col-md-6 col-sm-12">
+                                    <label asp-for="Estado" class="control-label"></label>
+                                    <select asp-for="Estado" asp-items="@Html.GetEnumSelectList<Estado>()" class="form-control"></select>
+                                    <span asp-validation-for="Estado" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Descripcion" class="control-label"></label>
+                                <textarea asp-for="Descripcion" class="form-control"></textarea>
+                                <span asp-validation-for="Descripcion" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="form-group col-md-12 col-sm-12">
+                                    <label asp-for="Ubicacion" class="control-label"></label>
+                                    <input asp-for="Ubicacion" class="form-control" />
+                                    <span asp-validation-for="Ubicacion" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table class="table">
+                                <thead>
+                                    <tr class="bg-gradient bg-success text-white">
+                                        <th>Nombre del Ponente</th>
+                                        <th>Apellido</th>
+                                        <th>Acción</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (ViewBag.ListPonente != null)
+                                    {
+                                        int indiceGrupo = 1;
+                                        foreach (var ponente in ViewBag.ListPonente)
+                                        {
+                                            <tr>
+                                                <td>@ponente.Nombre</td>
+                                                <td>@ponente.Apellido</td>
+                                                <td>
+                                                    <button type="submit" name="ponenteId" value="@ponente.Id,@indiceGrupo" class="btn btn-success">
+                                                        <i class="fa-solid fa-plus"></i>&nbsp;Agregar
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            indiceGrupo++;
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-md-6">
+                            <table class="table">
+                                <thead>
+                                    <tr class="bg-gradient bg-warning text-white">
+                                        <th>Nombre del Ponente</th>
+                                        <th>Apellido</th>
+                                        <th>Acción</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (ViewBag.ListaPonentesSeleccionados != null)
+                                    {
+                                        int indice = 0;
+                                        List<int> ponenteIds = new List<int>(); 
+                                        foreach (var ponenteSeleccionado in ViewBag.ListaPonentesSeleccionados)
+                                        {
+                                            ponenteIds.Add(ponenteSeleccionado.PonenteId); 
+                                            <tr>
+                                                <td>@ponenteSeleccionado.Ponente.Nombre</td>
+                                                <td>@ponenteSeleccionado.Ponente.Apellido</td>
+                                                <td>
+                                                    <button type="submit" name="opEliminarPonenteID" value="@indice" class="btn btn-danger">
+                                                        <i class="fa-solid fa-trash"></i>&nbsp;Eliminar
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            indice++;
+                                        }
+
+                                        string ponenteIdsString = string.Join(",", ponenteIds);
+                                        <input type="hidden" name="ponenteIds" value="@ponenteIdsString" />
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group mt-3 text-end">
+                        <a asp-action="Index" class="btn btn-info text-white"><i class="fas fa-arrow-alt-circle-left"></i>&nbsp;Regresar</a>
+                        <button type="reset" class="btn btn-secondary"> Limpiar <i class="fas fa-undo-alt"></i></button>
+                        <button type="submit" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i>&nbsp;Guardar</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

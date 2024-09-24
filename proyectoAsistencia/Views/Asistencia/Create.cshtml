@@ -1,0 +1,40 @@
+﻿@model proyectoAsistencia.Models.Asistencia
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card text-center">
+        <div class="card-header">
+            Marcar asistencia
+        </div>
+        <div class="card-body">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group mb-3">
+                    <label class="control-label">Búsqueda por código o dni</label>
+                    <input name="SearchEmailOrCode" type="number" maxlength="10" class="form-control" placeholder="Ej: 2022005489 o 123456789" />
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="EventoId" class="control-label"></label>
+                    <select asp-for="EventoId" class="form-control" asp-items="ViewBag.EventoId"></select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Registrar" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+        <div class="card-footer bg-info text-white text-muted">
+                Tómate el tiempo de describir bien tu DNI o número de estudiante, además de seleccionar el evento correcto
+        </div>
+    </div>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">
+    <i class="fas fa-arrow-alt-circle-left"></i> Regresar
+</a>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

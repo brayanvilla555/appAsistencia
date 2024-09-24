@@ -1,0 +1,67 @@
+﻿@model proyectoAsistencia.Models.Docente
+
+@{
+    ViewData["Title"] = "Agregar nuevo docente";
+}
+
+<div class="card mt-5">
+    <div class="card-header bg-gradient bg-success">
+        <h3 class="text-secondary text-white text-center">@ViewData["Title"]</h3>
+    </div>
+    <div class="card-body">
+        <div class="row ">
+            <div class="col-md-12">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="row mt-3 justify-content-between">
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label asp-for="Nombre" class="control-label"></label>
+                            <input asp-for="Nombre" class="form-control" />
+                            <span asp-validation-for="Nombre" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label asp-for="Apellido" class="control-label"></label>
+                            <input asp-for="Apellido" class="form-control" />
+                            <span asp-validation-for="Apellido" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row mt-3 justify-content-between">
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label asp-for="Telefono" class="control-label"></label>
+                            <input asp-for="Telefono" class="form-control" />
+                            <span asp-validation-for="Telefono" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row mt-3 justify-content-between">
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label asp-for="FechaAcceso" class="control-label"></label>
+                            <input asp-for="FechaAcceso" class="form-control" />
+                            <span asp-validation-for="FechaAcceso" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label asp-for="Contrasena" class="control-label"></label>
+                            <input asp-for="Contrasena" class="form-control" />
+                            <span asp-validation-for="Contrasena" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3 text-end">
+                        <a asp-action="Index" class="btn btn-info text-white"><i class="fas fa-arrow-alt-circle-left"></i>&nbsp;Regresar</a>
+                        <button type="reset" class="btn btn-secondary"> Limpiar <i class="fas fa-undo-alt"></i></button>
+                        <button type="submit" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i>&nbsp;Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,328 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\views\\curso\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\curso\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\views\\asistencia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\asistencia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\views\\estudiante\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\estudiante\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\views\\docente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\docente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\controllers\\docentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\controllers\\docentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\views\\evento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\evento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\views\\ponente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\ponente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\controllers\\cursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\controllers\\cursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\controllers\\ponentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\controllers\\ponentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\views\\administrador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\administrador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\wwwroot\\js\\menu.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\wwwroot\\js\\menu.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|c:\\users\\silva\\downloads\\pro7\\proyectoasistencia (7)\\proyectoasistencia\\proyectoasistencia\\views\\administrador\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8539A6F-D224-47CE-866A-C79585108949}|proyectoAsistencia\\proyectoAsistencia.csproj|solutionrelative:proyectoasistencia\\views\\administrador\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 228,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CursoController.cs",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\CursoController.cs",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Controllers\\CursoController.cs",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\CursoController.cs",
+              "RelativeToolTip": "proyectoAsistencia\\Controllers\\CursoController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:33:07.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Curso\\Index.cshtml",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Views\\Curso\\Index.cshtml",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Curso\\Index.cshtml",
+              "RelativeToolTip": "proyectoAsistencia\\Views\\Curso\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T08:32:23.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Evento\\Index.cshtml",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Views\\Evento\\Index.cshtml",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Evento\\Index.cshtml",
+              "RelativeToolTip": "proyectoAsistencia\\Views\\Evento\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T08:28:10.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EventoController.cs",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\EventoController.cs",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Controllers\\EventoController.cs",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\EventoController.cs",
+              "RelativeToolTip": "proyectoAsistencia\\Controllers\\EventoController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAmwEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:26:43.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\appsettings.json",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\appsettings.json",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\appsettings.json",
+              "RelativeToolTip": "proyectoAsistencia\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-23T08:18:32.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Ponente\\Index.cshtml",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Views\\Ponente\\Index.cshtml",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Ponente\\Index.cshtml",
+              "RelativeToolTip": "proyectoAsistencia\\Views\\Ponente\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T08:16:06.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PonenteController.cs",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\PonenteController.cs",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Controllers\\PonenteController.cs",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\PonenteController.cs",
+              "RelativeToolTip": "proyectoAsistencia\\Controllers\\PonenteController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:15:30.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Estudiante\\Index.cshtml",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Views\\Estudiante\\Index.cshtml",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Estudiante\\Index.cshtml",
+              "RelativeToolTip": "proyectoAsistencia\\Views\\Estudiante\\Index.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwCMAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T08:14:24.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EstudianteController.cs",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\EstudianteController.cs",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Controllers\\EstudianteController.cs",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\EstudianteController.cs",
+              "RelativeToolTip": "proyectoAsistencia\\Controllers\\EstudianteController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:13:41.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Docente\\Index.cshtml",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Views\\Docente\\Index.cshtml",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Docente\\Index.cshtml",
+              "RelativeToolTip": "proyectoAsistencia\\Views\\Docente\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T08:13:08.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DocenteController.cs",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\DocenteController.cs",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Controllers\\DocenteController.cs",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\DocenteController.cs",
+              "RelativeToolTip": "proyectoAsistencia\\Controllers\\DocenteController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAzwDUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:12:18.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Asistencia\\Index.cshtml",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Views\\Asistencia\\Index.cshtml",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Asistencia\\Index.cshtml",
+              "RelativeToolTip": "proyectoAsistencia\\Views\\Asistencia\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T08:10:57.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AsistenciaController.cs",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\AsistenciaController.cs",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Controllers\\AsistenciaController.cs",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\AsistenciaController.cs",
+              "RelativeToolTip": "proyectoAsistencia\\Controllers\\AsistenciaController.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAIwFcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:07:28.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Administrador\\Index.cshtml",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Views\\Administrador\\Index.cshtml",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Administrador\\Index.cshtml",
+              "RelativeToolTip": "proyectoAsistencia\\Views\\Administrador\\Index.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwCcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T08:06:35.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdministradorController.cs",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\AdministradorController.cs",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Controllers\\AdministradorController.cs",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Controllers\\AdministradorController.cs",
+              "RelativeToolTip": "proyectoAsistencia\\Controllers\\AdministradorController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwDgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:05:31.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "menu.js",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\wwwroot\\js\\menu.js",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\wwwroot\\js\\menu.js",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\wwwroot\\js\\menu.js",
+              "RelativeToolTip": "proyectoAsistencia\\wwwroot\\js\\menu.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-23T07:22:54.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "proyectoAsistencia\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAHsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T07:21:59.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Administrador\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "proyectoAsistencia\\Views\\Administrador\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\silva\\Downloads\\PRO7\\proyectoAsistencia (7)\\proyectoAsistencia\\proyectoAsistencia\\Views\\Administrador\\Dashboard.cshtml",
+              "RelativeToolTip": "proyectoAsistencia\\Views\\Administrador\\Dashboard.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T07:17:55.675Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

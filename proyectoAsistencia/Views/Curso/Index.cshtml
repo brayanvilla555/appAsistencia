@@ -1,0 +1,83 @@
+﻿@using proyectoAsistencia.Utils
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common
+@model IPagedList<proyectoAsistencia.Models.Curso>
+
+@{
+    ViewData["Title"] = "Listado de cursos";
+    var valorBusquedaCadena = ViewData["valorBusquedaCadena"]?.ToString();
+}
+
+<h2 class="mt-5 h2 text-secondary">@ViewData["Title"]</h2>
+
+<div class="d-flex justify-content-between mb-3">
+    <div class="">
+        <a asp-action="Create" class="btn btn-success "><i class="fas fa-book-reader"></i> Nuevo curso </a>
+    </div>
+    <div class="col-md-5 col-sm-12">
+        <form asp-controller="Curso" asp-action="Index" method="post">
+            <div class="input-group">
+                <input type="text"
+                       name="busqueda"
+                       value="@valorBusquedaCadena"
+                       class="form-control w-25"
+                       placeholder="Buscar por nombre del curso" pattern="[A-Za-z ]+"
+                       oninput="this.value = this.value.replace(/[^A-Za-z ]/g, '');">
+
+                <button class="btn btn-outline-info" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-outline-warning" asp-action="LimpiarBusqueda" type="submit">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<table class="table table-hover table-bordered mt-4">
+    <thead>
+        <tr class="bg-success text-white bg-gradient">
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().ciclo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Docentes)
+            </th>
+            <th>Operaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ciclo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Docentes.Apellido)
+                    @Html.DisplayFor(modelItem => item.Docentes.Nombre)
+                </td>
+                <td class="text-center">
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm"><i class="fas fa-user-edit"></i></a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"><i class="fas fa-user-times"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+                                new PagedListRenderOptions
+                            {
+                                LiElementClasses = new[] { "page-item" },
+                                PageClasses = new[] { "page-link" }
+                            })

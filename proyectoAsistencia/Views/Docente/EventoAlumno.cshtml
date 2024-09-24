@@ -1,0 +1,94 @@
+﻿@using proyectoAsistencia.Utils
+@model ICollection<proyectoAsistencia.Models.Asistencia>
+
+@{
+    ViewData["Title"] = "Asistencias de los alumnos";
+    var eventoSearchEvento = ViewData["eventoSearchEvento"]?.ToString();
+}
+
+<h2 class="mt-5 text-secondary">@ViewData["Title"]</h2>
+
+<form asp-controller="Docente" asp-action="EventoAlumno" method="GET">
+
+    <div class="row mt-3 justify-content-between">
+        <div class="col-5">
+
+            <div class=" input-group">
+                <select name="cicloAcademico" asp-items="Html.GetEnumSelectList<Ciclo>()" class="form-select">
+                    <option value="">Seleccione un ciclo</option>
+                    @if (ViewData["eventoSearchCiclo"] != null)
+                    {
+                        <option selected="selected" value="@ViewData["eventoSearchCiclo"]">@ViewData["eventoSearchCiclo"]</option>
+                    }
+                </select>
+
+                <input type="date"
+                       name="searchDate"
+                       value="@ViewData["searchDateValue"]"
+                       class="form-control w-25">
+
+            </div>
+        </div>
+        <div class="col-5">
+            <div class=" input-group">
+                <input placeholder="Buscar por nombre evento" name="eventoNombre" value="@eventoSearchEvento" class="form-control" />
+                <button class="btn btn-outline-info" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-outline-warning" asp-action="ClearSearchDocente" type="submit">
+                    <i class="fas fa-trash"></i>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+</form>
+
+
+
+<table class="table table-hover table-bordered mt-4">
+    <thead>
+        <tr class="bg-success text-white bg-gradient">
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Estudiante)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Estudiante)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Evento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Estudiante.Ciclo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().FechaHoraRegistro)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estudiante.Apellido)
+                    @Html.DisplayFor(modelItem => item.Estudiante.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estudiante.CodigoEstudiante)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Evento.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estudiante.Ciclo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaHoraRegistro)
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

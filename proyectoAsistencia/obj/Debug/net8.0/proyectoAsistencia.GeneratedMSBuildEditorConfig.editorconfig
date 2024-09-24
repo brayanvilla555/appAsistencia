@@ -1,0 +1,211 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = proyectoAsistencia
+build_property.RootNamespace = proyectoAsistencia
+build_property.ProjectDir = C:\Users\braya\OneDrive\Documentos\Escritorio\proyectoAsistencia\proyectoAsistencia\proyectoAsistencia\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\braya\OneDrive\Documentos\Escritorio\proyectoAsistencia\proyectoAsistencia\proyectoAsistencia
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Administrador/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Administrador/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Administrador/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Administrador/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Administrador/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Administrador/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Asistencia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Asistencia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Asistencia/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Asistencia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Asistencia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Curso/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Curso/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Curso/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Curso/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Curso/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Vyc29cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Docente/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jZW50ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Docente/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jZW50ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Docente/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jZW50ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Docente/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jZW50ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Docente/EventoAlumno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jZW50ZVxFdmVudG9BbHVtbm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Docente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Estudiante/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Estudiante/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Estudiante/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Estudiante/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Estudiante/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Estudiante/MiAsistencia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxNaUFzaXN0ZW5jaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Evento/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Evento/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Evento/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Evento/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Evento/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Login/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWNjZXNzRGVuaWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Ponente/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9uZW50ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Ponente/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9uZW50ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Ponente/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9uZW50ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Ponente/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9uZW50ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Ponente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9uZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/braya/OneDrive/Documentos/Escritorio/proyectoAsistencia/proyectoAsistencia/proyectoAsistencia/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-kgceksgsx7

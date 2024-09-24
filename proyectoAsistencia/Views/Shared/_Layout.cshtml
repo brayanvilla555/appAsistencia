@@ -1,0 +1,185 @@
+﻿@using System.Security.Claims
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - proyectoAsistencia</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/proyectoAsistencia.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/menu.css"></link>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    @if (User.Claims.Any())
+    {
+        <button class="btn btn-primary" id="sidebarCollapse">
+            <i class="fa fa-bars"></i>
+        </button>
+    }
+
+    <nav id="sidebar" class="bg-light">
+
+        @if (User.Claims.Any())
+        {
+            <div class="nav-item bg-gradient bg-success text-center py-2">
+                <img src="~/img/img-perfil.jpg" alt="IMagen de perfil" class="w-50 rounded-circle" /> <br />
+                <span class="w-100 text-white text-center  p-0">@(User.FindFirst(ClaimTypes.Role).Value?.ToString())</span><br/>
+                <span class="w-100 text-white">@(User.FindFirst(ClaimTypes.Name).Value?.ToString())</span>
+            </div>
+            
+        }
+            <div class="">
+
+                <ul class="nav flex-column">
+                    @if (User.IsInRole("Administrador"))
+                    {
+                    <div class="nav-item bg-gradient bg-info text-center py-1">
+                        <a asp-area="" asp-controller="Administrador" asp-action="Dashboard" class="nav-link text-black"> <i class="fa fa-home"></i>  Inicio</a>
+                    </div>
+
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#adminSubmenu" role="button" aria-expanded="false" aria-controls="adminSubmenu">
+                            <i class="fas fa-users-cog"></i> Administradores
+                        </a>
+                        <ul class="collapse list-unstyled ms-3" id="adminSubmenu">
+                            <li><a asp-controller="Administrador" asp-action="Index" class="nav-link">Gestionar</a></li>
+                            <li><a asp-area="" asp-controller="Administrador" asp-action="Create" class="nav-link">Registrar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#ponenteSubmenu" role="button" aria-expanded="false" aria-controls="ponenteSubmenu">
+                            <i class="fa fa-user"></i> Ponente
+                        </a>
+                        <ul class="collapse list-unstyled ms-3" id="ponenteSubmenu">
+                            <li><a asp-controller="Ponente" asp-action="Index" class="nav-link">Gestionar</a></li>
+                            <li><a asp-controller="Ponente" asp-action="Create" class="nav-link">Registrar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#eventosSubmenu" role="button" aria-expanded="false" aria-controls="eventosSubmenu">
+                            <i class="fa fa-calendar"></i> Eventos
+                        </a>
+                        <ul class="collapse list-unstyled ms-3" id="eventosSubmenu">
+                            <li><a asp-controller="Evento" asp-action="Index" class="nav-link">Gestionar</a></li>
+                            <li><a asp-controller="Evento" asp-action="Create" class="nav-link">Registrar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#asistenciasSubmenu" role="button" aria-expanded="false" aria-controls="asistenciasSubmenu">
+                            <i class="fa fa-check-square"></i> Asistencias
+                        </a>
+                        <ul class="collapse list-unstyled ms-3" id="asistenciasSubmenu">
+                            <li><a asp-controller="Asistencia" asp-action="Index" class="nav-link">Reportes</a></li>
+                            <li><a asp-controller="Asistencia" asp-action="Create" class="nav-link">Registrar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#docenteSubmenu" role="button" aria-expanded="false" aria-controls="asistenciasSubmenu">
+                            <i class="fas fa-chalkboard-teacher"></i> Docente
+                        </a>
+                        <ul class="collapse list-unstyled ms-3" id="docenteSubmenu">
+                            <li><a asp-controller="Docente" asp-action="Index" class="nav-link">Reportes</a></li>
+                            <li><a asp-controller="Docente" asp-action="Create" class="nav-link">Registrar</a></li>
+                            <li><a asp-controller="Curso" asp-action="Index" class="nav-link">Cursos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#estudiantesSubmenu" role="button" aria-expanded="false" aria-controls="estudiantesSubmenu">
+                            <i class="fa fa-graduation-cap"></i> Estudiantes
+                        </a>
+                        <ul class="collapse list-unstyled ms-3" id="estudiantesSubmenu">
+                            <li><a asp-controller="Estudiante" asp-action="Index" class="nav-link">Gestionar</a></li>
+                            <li><a asp-controller="Estudiante" asp-action="Create" class="nav-link">Registrar</a></li>
+                        </ul>
+                    </li>
+                }
+                else if (User.IsInRole("Estudiante"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#estudiantesSubmenu" role="button" aria-expanded="false" aria-controls="estudiantesSubmenu">
+                            <i class="fa fa-graduation-cap"></i> Estudiante
+                        </a>
+                        <ul class="collapse list-unstyled ms-3" id="estudiantesSubmenu">
+                            <li><a asp-controller="Estudiante" asp-action="MiAsistencia" class="nav-link">Mis asistencias</a></li>
+                        </ul>
+                    </li>
+
+                }
+                else if (User.IsInRole("Docente"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#docenteSubmenu" role="button" aria-expanded="false" aria-controls="asistenciasSubmenu">
+                            <i class="fas fa-chalkboard-teacher"></i> Docente
+                        </a>
+                        <ul class="collapse list-unstyled ms-3" id="docenteSubmenu">
+                            <li><a asp-controller="Docente" asp-action="EventoAlumno" class="nav-link">Asistencias</a></li>
+                        </ul>
+                    </li>
+                }
+                </ul>
+            </div>        
+        
+        @if (User.Claims.Any())
+        {
+            <form asp-controller="Login" asp-action="Logout" method="POST">
+                <button class="btn btn-danger logout-btn">
+                    <i class="fa fa-sign-out-alt"></i> Cerrar sesión
+                </button>
+            </form>
+        }
+    </nav>
+
+
+    <!-- Contenido principal -->
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    @{/*
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">proyectoAsistencia</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - proyectoAsistencia - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>*/
+    }
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/menu.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await Component.InvokeAsync("Notyf")
+</body>
+</html>

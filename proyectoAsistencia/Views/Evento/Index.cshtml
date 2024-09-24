@@ -1,0 +1,97 @@
+﻿@using proyectoAsistencia.Utils
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common
+@model IPagedList<proyectoAsistencia.Models.Evento>
+@{
+    ViewData["Title"] = "Listado de eventos";
+    var valorBusquedaCadena = ViewData["valorBusquedaCadena"]?.ToString();
+    var valorBusquedaFecha = @ViewData["valorBusquedaFecha"];
+    var valorBusquedaEstado = ViewData["valorBusquedaEstado"];
+}
+
+<h2 class="mt-5 text-secondary">@ViewData["Title"]</h2>
+
+<div class="d-flex justify-content-between mb-3">
+    <div class="col-md-4 col-sm-12">
+        <a asp-action="Create" class="btn btn-success">Nuevo evento <i class="fas fa-calendar-alt"></i></a>
+    </div>
+    <div class="col-md-8 col-sm-12">
+        <form asp-controller="Evento" asp-action="Index" method="post">
+            <div class="input-group">
+                <input type="text"
+                       name="cadenaBusqueda"
+                       value="@valorBusquedaCadena"
+                       class="form-control w-25"
+                       placeholder="Buscar por nombre" pattern="[A-Za-z ]+" oninput="this.value = this.value.replace(/[^A-Za-z ]/g, '');">
+
+                <input type="date"
+                       name="fechaBusqueda"
+                       value="@ViewData["valorBusquedaFecha"]"
+                       class="form-control w-25">
+
+                <select name="estadoBusqueda" class="form-control w-25" asp-items="@Html.GetEnumSelectList<Estado>()">
+                   <option value="">Selecciona el estado</option>
+                   @if (ViewData["valorBusquedaEstado"] != null)
+                   {
+                       <option selected="selected" value="@ViewData["valorBusquedaEstado"]">@ViewData["valorBusquedaEstado"]</option>
+                   }
+                </select>
+                <button class="btn btn-outline-info" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-outline-warning" asp-action="LimpiarBusqueda" type="submit">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<table class="table table-hover table-bordered mt-4">
+    <thead>
+        <tr class="bg-success text-white bg-gradient">
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Nombre)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FirstOrDefault().FechaHoraInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Estado)
+            </th class="text-center">
+            <th class="text-center">
+                Operaciones
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaHoraInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td class="text-center">
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm"><i class="fas fa-user-edit"></i></a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"><i class="fas fa-user-times"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+                        new PagedListRenderOptions
+                    {
+                        LiElementClasses = new[] { "page-item" },
+                        PageClasses = new[] { "page-link" }
+                    })
+

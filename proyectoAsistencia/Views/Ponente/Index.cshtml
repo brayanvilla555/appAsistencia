@@ -1,0 +1,91 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common
+@model IPagedList<proyectoAsistencia.Models.Ponente>
+
+@{
+    ViewData["Title"] = "Listado de ponentes";
+    var cadenaBusquedaValor = ViewData["cadenaBusquedaValor"]?.ToString();
+}
+
+<h2 class="mt-5 h2 text-secondary">@ViewData["Title"]</h2>
+
+<div class="d-flex justify-content-between mb-3">
+    <div class="col-md-7 col-sm-12">
+        <a asp-action="Create" class="btn btn-success">Nuevo ponente <i class="fas fa-user-plus"></i></a>
+    </div>
+    <div class="col-md-5 col-sm-12">
+        <form asp-controller="Ponente" asp-action="Index" method="GET">
+            <div class="input-group">
+                <input type="text" name="cadenaBusqueda" value="@cadenaBusquedaValor" class="form-control w-25"
+                       placeholder="Buscar por nombre o apellido" pattern="[A-Za-z ]+"
+                       oninput="this.value = this.value.replace(/[^A-Za-z ]/g, '');">
+                <button class="btn btn-outline-info" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-outline-warning" asp-controller="Ponente" asp-action="LimpiarBusqueda" type="submit">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<table class="table table-hover table-bordered mt-4">
+    <thead>
+        <tr class="bg-success text-white bg-gradient">
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Nombre)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Apellido)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Especializacion)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Email)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Telefono)
+            </th>
+            <th class="text-center">
+                Acciones
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Especializacion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefono)
+                </td>
+                <td class="text-center">
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm"><i class="fas fa-user-edit"></i></a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"><i class="fas fa-user-times"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+                     new PagedListRenderOptions
+                        {
+                            LiElementClasses = new[] { "page-item" },
+                            PageClasses = new[] { "page-link" }
+                        })

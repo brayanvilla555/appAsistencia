@@ -1,0 +1,70 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container mt-5">
+
+    <div class="row h-50 justify-content-center mb-4">
+        <div class="card col-md-10 col-sm-12 text-center text-white" style="background-image: url('https://scontent.fcja2-1.fna.fbcdn.net/v/t39.30808-6/418321515_841569621105762_5597408396783320006_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=1_PJR2dtr5cQ7kNvgGwBsxB&_nc_ht=scontent.fcja2-1.fna&_nc_gid=AqsHxPYiir7mBjhmlg8gtSB&oh=00_AYDscgJPlNcecTSS6KdOXl8FCmksJKckSRKnuhbV04a5cg&oe=66F6B7DC'); background-size: cover; background-position: center center; height: 200px; border: none;">
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mb-4">
+        <a asp-controller="Asistencia" asp-action="Index" class="card col-md-10 col-sm-12 text-center bg-dark text-white text-decoration-none">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-user-check fa-2x text-success" ></i></h5>
+                <h5 class="card-title">Asistencias</h5>
+            </div>
+        </a>
+    </div>
+
+    <div class="row justify-content-around">
+        <a asp-controller="Administrador" asp-action="Index" class="card col-md-3 col-sm-12 text-center text-decoration-none">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-user-shield fa-2x text-primary"></i></h5>
+                <h5 class="card-title">Administradores</h5>
+            </div>
+        </a>
+
+        <a asp-controller="Ponente" asp-action="Index" class="card col-md-3 col-sm-12 text-center text-decoration-none">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-chalkboard-teacher fa-2x text-danger"></i></h5>
+                <h5 class="card-title">Ponentes</h5>
+            </div>
+        </a>
+
+        <a asp-controller="Evento" asp-action="Index" class="card col-md-3 col-sm-12 text-center text-decoration-none">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-calendar-alt fa-2x text-info"></i></h5>
+                <h5 class="card-title">Eventos</h5>
+            </div>
+        </a>
+    </div>
+
+    <div class="row justify-content-around mt-3">
+        <a asp-controller="Docente" asp-action="Index" class="card col-md-3 col-sm-12 text-center text-decoration-none">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-user-tie fa-2x" style="color: #6f42c1;"></i></h5>
+                <h5 class="card-title">Docentes</h5>
+            </div>
+        </a>
+
+        <a asp-controller="Estudiante" asp-action="Index" class="card col-md-3 col-sm-12 text-center text-decoration-none">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-user-graduate fa-2x text-warning"></i></h5>
+                <h5 class="card-title">Estudiantes</h5>
+            </div>
+        </a>
+
+        <a asp-controller="Curso" asp-action="Index" class="card col-md-3 col-sm-12 text-center text-decoration-none">
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-book fa-2x" style="color: #e74c3c;"></i></h5>
+                <h5 class="card-title">Cursos</h5>
+            </div>
+        </a>
+    </div>
+</div>
